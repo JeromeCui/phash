@@ -5,4 +5,4 @@ phash is a simple Go wrapper around the [pHash](http://www.phash.org) library.
 
 # Install
 
-    go get -u github.com/opennota/phash
+    go get -u github.com/JeromeCui/phash
