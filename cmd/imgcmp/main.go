@@ -4,10 +4,15 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opennota/phash"
+	"github.com/JeromeCui/phash"
 )
 
 func main() {
+	if len(os.Args) <= 2 {
+		fmt.Printf("need source file and target file\n")
+		return
+	}
+
 	h1, err := phash.ImageHashDCT(os.Args[1])
 	if err != nil {
 		fmt.Println(err)
